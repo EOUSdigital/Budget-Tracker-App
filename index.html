@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main id="main">
+        <section id="lessonDescription">
+            <h1>📚 Module 4 - Lesson 02.03.03 Creating a Function - Budget Tracker App</h1>
+        </section>
+
+        <header id="header">
+            <h1>Budget Tracker</h1>
+        </header>
+
+        <section id="summary">
+            <h3>Balance Summary</h3>
+            <p><strong>Total Income:</strong> <span id="total-income">$0.00</span></p>
+            <p><strong>Total Expenses:</strong> <span id="total-expense">$0.00</span></p>
+            <p><strong>Current Balance:</strong> <span id="balance">$0.00</span></p>
+        </section>
+
+        <section id="form-section">
+            <div class="input-row">
+                <div id="amount">
+                    <label for="amountInput">Amount</label>
+                    <input type="number" id="amountInput" step="0.01" min="0.01" max="9999999.99" placeholder="e.g. 123.45" />
+                </div>
+                
+                <div id="description">
+                    <label for="descriptionInput">Description</label>
+                    <input type="text" id="descriptionInput" />
+                </div>
+            </div>
+
+            <div class="form-action-row">
+                <div class="radio-group">
+                    <label><input type="radio" name="type" value="income" checked> Income</label>
+                    <label><input type="radio" name="type" value="expense"> Expense</label>
+                </div>
+                <button id="add-btn">Add Transaction</button>
+            </div>
+
+
+        </section>
+
+        <section id="transaction-list"><!-- Tasks will be inserted here --></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
